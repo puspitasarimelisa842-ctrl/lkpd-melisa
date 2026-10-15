@@ -1,21 +1,96 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LKPD VPS dan WPS</title>
+  <style>
+    /* Styling Dasar Halaman */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 30px 20px;
+    }
+
+    /* Container Utama */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Judul Utama */
+    h1 {
+      color: #1a365d;
+      font-size: 24px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #3182ce;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    /* Kartu Layanan (Item) */
+    .item {
+      background-color: #f8fafc;
+      border-left: 4px solid #3182ce;
+      border-radius: 0 8px 8px 0;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Styling Judul Setiap Poin */
+    .item-title {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: #2b6cb0;
+      font-weight: 600;
+    }
+
+    /* Deskripsi Poin */
+    p {
+      margin: 0;
+      color: #4a5568;
+      font-size: 15px;
+    }
+  </style>
 </head>
 <body>
-  <h1>
-    Fase 1: pengenalan konsep vps & cloud
-  </h1>
-<h2> 1. Shared Hosting</h2>
-  <p>Layanan hosting dimana sebuah server fisik dibagi bersama sama dengan banyak pengguna lain</p>
-  <h3> 2. Dedicated Serve</h3>
-  <p>Seluruh sumber daya server fisik di dedikasikanpenuh hanya untuk satu penyewa atau pengguna saja</p>
-  <h4> 3. Amazon lightsail</h4>
-  <p>Layanan virtual private server (vps) dari aws yang di rancang khusus untuk pemula atau proyek sekala kecil/ menengah</p>
-  <h5> 4. Amazon EC2 ( Elastic Compute  Cloud)</h5>
-  <p>Layanan web berskala besar yang menyadiakan kapasitas komputasi virtual server yang dapat dibubah ukurannya di cluod AWS</p>
+
+  <div class="container">
+    <h1>Fase 1: Pengenalan Konsep VPS & Cloud</h1>
+
+    <div class="item">
+      <div class="item-title">1. Shared Hosting</div>
+      <p>Layanan hosting dimana sebuah server fisik dibagi bersama-sama dengan banyak pengguna lain.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-title">2. Dedicated Server</div>
+      <p>Seluruh sumber daya server fisik didedikasikan penuh hanya untuk satu penyewa atau pengguna saja.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-title">3. Amazon Lightsail</div>
+      <p>Layanan Virtual Private Server (VPS) dari AWS yang dirancang khusus untuk pemula atau proyek skala kecil/menengah.</p>
+    </div>
+
+    <div class="item">
+      <div class="item-title">4. Amazon EC2 (Elastic Compute Cloud)</div>
+      <p>Layanan web berskala besar yang menyediakan kapasitas komputasi virtual server yang dapat diubah ukurannya di cloud AWS.</p>
+    </div>
+  </div>
+
 </body>
 </html>
